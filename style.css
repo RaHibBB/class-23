@@ -1,0 +1,107 @@
+body,h1,h2,h3,h4,h5,h6,a,p,span{
+    font-family: 'Spartan', sans-serif;
+}
+ul li{
+    position: relative;
+    margin-right: 10px;
+}
+ul li a{
+   line-height: 4rem;
+}
+
+ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 84%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+}
+
+
+/* end */
+.hero-1{
+    background: rgb(237, 246, 255);
+    padding: 100px 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.hero-left{
+    
+}
+.hero-right{
+
+}
+.hero-right img{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    top: -185px;
+    right: -102px;
+
+}
+
+/* end */
+
+
+.card-h1::after{
+    content: "";
+    position: absolute;
+    top: 102px;
+    left: 5px;
+    height: 3px;
+    width: 90px;
+    background: rgb(6, 109, 165);
+    transition: .3s;
+}
+.card-h1:hover::after{
+   
+    width: 200px;
+    
+}
+/*  */
+.card-bg{
+    background: url(./video-img-template/service-patern.png) no-repeat left bottom;
+    z-index: -12;
+   
+}
+.card-sec{
+    padding: 30px 25px;
+    line-height: 2rem;
+    border-radius: 20px;
+   z-index: 11;
+}
+
+.card-sec span{
+    background: rgb(82, 82, 240);
+    font-size: 35px;
+    color: white;
+    padding: 15px;
+    border-radius: 50px 50px 50px 0px;
+    position: relative;
+    
+}
+.card-sec span::after{
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: rgb(82, 82, 240);
+    transition: .3s;
+}
+.card-sec span:hover:after{
+    width: 60px;
+}
+
+
+
+/* end */
+.coverr{
+    background: linear-gradient(rgba(79, 75, 117, 0.6), rgba(63, 60, 94, 0.6)), url(./video-img-template/video-bg.jpg) ;
+    background-position:  center;
+    background-size: cover;
+    padding: 200px 0;
+}
